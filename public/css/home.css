@@ -1,0 +1,156 @@
+body{
+  background-color: rgb(20, 20, 20);
+}
+
+.headers{
+  display:flex;
+}
+
+.headers h1{
+  color: red;
+   font-family: 'Cairo', sans-serif;
+   font-size: 40px;
+   padding-right:40px;
+   cursor: pointer;
+
+}
+
+.headers h4{
+  padding: 10px;
+  padding-top:40px;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-weight: 100;
+  transition: ease-in 0.2s;
+  cursor: pointer;
+
+
+}
+
+.headers h4:hover{
+  color: rgba(128, 128, 128, 0.877);
+}
+
+.logout{
+  padding:10px;
+  background-color: brown;
+  color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right:3%;
+  top:7%;
+  border-color: transparent;
+  cursor: pointer;
+
+}
+
+
+
+.trend_movies h3{
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.top_mov{
+  
+  overflow: scroll;
+}
+
+.top_mov::-webkit-scrollbar {
+  display: none;
+}
+
+.top_mov::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+
+.top_shows{
+  display: flex;
+  overflow: scroll;
+  
+}
+
+.comedy{
+  display: flex;
+  overflow: scroll;
+}
+.top_shows::-webkit-scrollbar {
+  display: none;
+}
+
+.top_shows::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+
+.comedy::-webkit-scrollbar {
+  display: none;
+}
+
+.comedy::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+
+.top_tvshow {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.comedy_mov{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+hr{
+  height: 1px;
+border: 0;
+color: #333;
+background-color: #333;
+}
+
+.top_show:hover{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.top_movie_node:hover{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+
+}
+
+.top_com:hover{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.search_box{
+  background-color: black;
+  border: none;
+  width:24%;
+  height:35px;
+  position: absolute;
+  right:11%;
+  top:6.5%;
+  border-width: thin;
+  color:white;
+  font-size: medium;
+  border-radius: 5%;
+
+}
+.search_box::placeholder{
+  font-size: medium;
+}
+
+

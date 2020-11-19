@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <title>Home</title>
+  <link rel="stylesheet" href="/css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+  <body>
+    <div id="headers" class="headers">
+    <h1 class="title" id="title" onclick="reroute()" >ZMovies</h1>
+    <h4 id="head1" class="head1">Movies</h4>
+    <h4 id="head2" class="head2">TV Shows</h4>
+    <h4 id="head3" onclick="routeMylist()" class="head3">My List</h4>
+    <input type="text" name="searches" id="search_box" class="search_box" placeholder="Titles, people, genres">
+    <button type="button" id="logout" onclick="logout()" class="logout" >Sign Out</button>
+  </div>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <div class="trend_movies" id="trending_movies">
+    <h3 class="trend_movies" id="trend_movies">Trending Movies:</h3>
+   <div class="top_mov" id="top_mov">
+
+   </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3 class="top_tvshow" id="trend_shows">Top TV Shows</h3>
+  <div class= "top_shows" id="top_shows">
+    
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3 class="comedy_mov" id="comedy_mov">Top Comedy Movies</h3>
+  <div class="comedy" id="comedy"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

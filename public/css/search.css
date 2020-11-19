@@ -1,0 +1,147 @@
+body{
+  background-color: rgb(20, 20, 20);
+}
+
+.headers{
+  display:flex;
+}
+
+.headers h1{
+  color: red;
+   font-family: 'Cairo', sans-serif;
+   font-size: 40px;
+   padding-right:40px;
+
+}
+
+.headers h4{
+  padding: 10px;
+  padding-top:40px;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-weight: 100;
+  transition: ease-in 0.2s;
+  cursor: pointer;
+
+
+}
+
+.headers h4:hover{
+  color: rgba(128, 128, 128, 0.877);
+}
+
+.logout{
+  padding:10px;
+  background-color: brown;
+  color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right:3%;
+  top:7%;
+  border-color: transparent;
+  cursor: pointer;
+
+}
+.search_box{
+  background-color: black;
+  border: none;
+  width:24%;
+  height:35px;
+  position: absolute;
+  right:11%;
+  top:6.5%;
+  border-width:2px;
+  color:white;
+  font-size: medium;
+
+}
+.search_box::placeholder{
+  font-size: medium;
+}
+hr{
+  height: 1px;
+border: 0;
+color: #333;
+background-color: #333;
+}
+
+.search_content{
+  display:flex;
+
+}
+
+.search_info h2{
+  color: white;
+  font-size: xx-large;
+  font-family: 'Anton', sans-serif;
+  font-weight: 700;
+  padding-left: 30px;
+
+}
+
+
+.search_info h3{
+  color: white;
+  font-size: large;
+  font-family: 'Anton', sans-serif;
+  font-weight: 300;
+  padding-left:30px;
+
+
+}
+
+.search_info hr{
+  width: 100%;
+}
+
+.search_info{
+  position: absolute;
+  left:40%;
+}
+
+.movie_temp h3{
+  font-weight: 300;
+  font-family: 'Anton', sans-serif;
+}
+
+.like_btn input{
+  color:white;
+  font-weight: 400;
+  position: absolute;
+  left:8%;
+
+}
+
+.err{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 900;
+  display: none;
+  color:gray;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.similar_content{
+  display: flex;
+  overflow: scroll;
+}
+.similar_content::-webkit-scrollbar {
+  display: none;
+}
+
+.similar_content::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+
+.sim_content{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600; 
+}
+.sim_con:hover{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}

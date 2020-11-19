@@ -1,0 +1,105 @@
+.register_temp{
+  position: absolute;
+  border:3px;
+  border-radius: 4%;
+  /*background-image: linear-gradient(to right, #434343 0%, black 100%);*/
+  background-color:black;
+  width: 30%;
+  height: 75%;
+  top: 20%;
+  left: 32%;
+  opacity: 0.9;
+}
+
+body{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('/zmovies.jpg');
+  background-position: center;
+}
+
+.heading h1{
+  font-family: 'Anton', sans-serif;
+  font-size: 250%;
+  color:red;
+
+}
+
+.heading {
+  position: absolute;
+  left:10%;
+
+}
+.title{
+  position: relative;
+  left:15%;
+  color: white;
+  font-weight:1100;
+  font-size: xx-large;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+
+input{
+  border-radius:5%;
+  position: relative;
+  width: 70%;
+  height: 40px;
+  font-family: 'Noto Sans SC', sans-serif;
+  background:#333;
+  border-color: #333;
+  left: 14%;
+  font-size: medium;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  opacity:1;
+
+
+}
+
+::placeholder{
+  color: gray;
+  opacity: 1;
+  font-size: medium;
+
+}
+
+.send{
+  width: 70%;
+  height: 40px;
+  position: relative;
+  left: 15%;
+  font-family: 'Noto Sans SC', sans-serif;
+  background-color: #E50914;
+  color:white;
+  font-weight: bolder;
+  font-size: medium;
+  border-radius: 3%;
+  opacity:1;
+  border-color: #E50914;
+
+}
+.error_name{
+  position:relative;
+  left:34%;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.send:hover{
+  background-color: #bb1717;
+}
+
+.log h4{
+  color: gray;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.log{
+  position: relative;
+  left:20%;
+}
+
+.success{
+  position:relative;
+  left:34%;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+

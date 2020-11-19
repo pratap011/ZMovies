@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <title>Home</title>
+  <link rel="stylesheet" href="/css/search.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+  <body onload="myList()">
+    <div id="headers" class="headers">
+    <h1 onclick="reroute()">ZMovies</h1>
+    <h4 id="head1" class="head1">Movies</h4>
+    <h4 id="head2" class="head2">TV Shows</h4>
+    <h4 id="head3" onclick="routeMylist()" class="head3">My List</h4>
+    <input type="text" id="search_box" onclick= "searchBox()" class="search_box" placeholder="Titles, people, genres">
+    <button type="button" id="logout" onclick="logout()" class="logout" >Sign Out</button>
+  </div>
+  <hr>
+  <br>
+  <div class="search_content" id="search_content">
+  <div class="search_img" id="search_img">
+
+  </div>
+  <div class="search_info" id="search_info">
+  
+  </div>
+
+  
+  </div>
+  <div id="error" class="error">
+    <h2 id="err" class="err">Sorry, we couldn't find what you were looking for :(</h2>
+  </div>
+  <br>
+  <br>
+  <br />
+      <br />
+
+  <h3 class="sim_content" id="sim_content">Similar movies:</h3>
+  <hr>
+<div class="similar_content" id="similar_content">
+
+
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/search.js"></script>
+  </body>
+  </html>

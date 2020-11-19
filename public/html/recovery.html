@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recovery</title>
+    <link rel="stylesheet" href="/css/recovery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&family=Squada+One&display=swap" rel="stylesheet">
+    <body>
+      <div class="heading">
+        <h1>ZMovies</h1>
+        <hr>
+      </div>
+    
+      <div class="recovery_temp">
+        <h2 class="title">Recovery</h2>
+        <br>
+      <div>
+        <input id="email" type="text" placeholder="Email.." name="email"><br>
+        <br>
+        <br>
+        <input onclick="submitButtonHandler()" type="submit" class="send">
+        <br>
+        <br>
+        <div class="error_name" id="error_name"></div>
+        <div class = "success" id="success"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/rec.js"></script>
+      </body>

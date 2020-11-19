@@ -1,0 +1,86 @@
+body{
+  background-color: rgb(20, 20, 20);
+}
+
+.headers{
+  display:flex;
+}
+
+.headers h1{
+  color: red;
+   font-family: 'Cairo', sans-serif;
+   font-size: 40px;
+   padding-right:40px;
+
+}
+
+.headers h4{
+  padding: 10px;
+  padding-top:40px;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-weight: 100;
+  transition: ease-in 0.2s;
+  cursor: pointer;
+
+
+}
+
+.headers h4:hover{
+  color: rgba(128, 128, 128, 0.877);
+}
+
+.logout{
+  padding:10px;
+  background-color: brown;
+  color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right:3%;
+  top:7%;
+  border-color: transparent;
+  cursor: pointer;
+
+}
+.search_box{
+  background-color: black;
+  border: none;
+  width:24%;
+  height:35px;
+  position: absolute;
+  right:11%;
+  top:6.5%;
+  border-width:2px;
+  color:white;
+  font-size: medium;
+
+}
+.search_box::placeholder{
+  font-size: medium;
+}
+hr{
+  height: 1px;
+border: 0;
+color: #333;
+background-color: #333;
+}
+
+.liked_content{
+  position:absolute;
+display: flexbox;
+transition: transform .2s;
+}
+
+.liked_content img:hover{
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.empty{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 900;
+  display: none;
+  color:gray;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

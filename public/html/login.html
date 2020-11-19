@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&family=Squada+One&display=swap" rel="stylesheet">
+    <body>
+      <div class="heading">
+        <h1>ZMovies</h1>
+        <hr>
+      </div>
+    
+      <div class="login_temp">
+       <strong><h2 class="title">Login</h2></strong>
+        <br>
+      <div>
+        <input id="name" type="text" placeholder="&nbsp;&nbsp;&nbsp;Name" name="name"><br>
+        </div>
+        <br>
+        <input id="password" type="password" placeholder="&nbsp;&nbsp;Password" name="password"><br>
+        <div class="error_password" id="error_password"></div>
+        <br>
+        <br>
+        <input  onclick="submitButtonHandler()" class="send" type= "submit">
+        <br>
+        <br>
+        <div class="error_name" id="error_name"></div>
+        <br>
+        <div class="reg">
+          <h4>New to ZMovies?<a style="text-decoration: none; color: white; font-weight: 700" href="/register"> Click here</a></h4>
+          
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/login.js"></script>
+    </body>
+  </head>
+</html>
