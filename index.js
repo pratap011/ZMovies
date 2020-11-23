@@ -11,6 +11,7 @@ const app = express();
 const cookieParser = require('cookie-parser');
 const path= require('path');
 const url="mongodb://127.0.0.1:27017/Users"
+var PORT = process.env.PORT || 5000;
  mongo.connect(url, { useUnifiedTopology: true }, ()=>{
    console.log("Connected to the database!");
  })
@@ -39,7 +40,7 @@ app.use('/mylist',userCount, mylist);
 
 
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
   console.log("The server is up and running");
   });
 
