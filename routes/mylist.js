@@ -15,11 +15,14 @@ mylist.get("/", (req,res)=>{
 mylist.get("/api", (req,res)=>{
     // const userName = user.findOne({name: req.cookies.userData.name});
     // console.log(userName.password);
-    user.findOne({name:req.cookies.userData.name }, function(err,obj) { res.send({likes:obj.liked}); 
+    const userName = user.findOne();
+    user.findOne({name:req.cookies.userData.name }, function(err, document) {
+      res.send({likes: document.liked});
+    });
   }
     );
     
-})
+
 
 mylist.get("/check",(req,res)=>{
   const queryObject = url.parse(req.url,true).query;

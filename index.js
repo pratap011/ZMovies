@@ -10,10 +10,16 @@ const search = require('./routes/search.js');
 const app = express();
 const cookieParser = require('cookie-parser');
 const path= require('path');
-const url="mongodb://127.0.0.1:27017/Users"
+const url="mongodb+srv://Pratap:pratapmongo@users.oejn7.mongodb.net/Users?retryWrites=true&w=majority";
 var PORT = process.env.PORT || 5000;
- mongo.connect(url, { useUnifiedTopology: true }, ()=>{
-   console.log("Connected to the database!");
+ mongo.connect(url, { useUnifiedTopology: true }, (err)=>{
+   if(err){
+    console.log(err);
+   }
+   else{
+     console.log("Connected to the database successfully!");
+   }
+  
  })
 var userNum=0;
  function userCount(req,res,next){
